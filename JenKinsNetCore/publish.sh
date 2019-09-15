@@ -9,4 +9,4 @@ if [ $? -eq 0 ];then
 fi
 
 docker build -t jenkinsnetcore --build-arg env="Development" .
-docker run -d --restart=always  -p 8012:80 --name jenkinsnetcore
+docker run -d --restart=always  -p 8012:80 --name jenkinsnetcore jenkinsnetcore
